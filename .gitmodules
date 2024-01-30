@@ -1,3 +1,6 @@
 [submodule "Project-1/PundiXToken/lib/forge-std"]
 	path = Project-1/PundiXToken/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "Project-1/PundiXToken/lib/openzeppelin-contracts"]
+	path = Project-1/PundiXToken/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
