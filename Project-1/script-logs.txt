@@ -1,0 +1,135 @@
+[⠒] Compiling...
+No files changed, compilation skipped
+Script ran successfully.
+
+== Logs ==
+  Deployer: 0xE842987E5078a20bA7235865a90257F62fa63674
+  Token Contract Address: 0x11795E2bf7BBD20fE98eA458333AAc334F01a0dc
+
+## Setting up 1 EVM.
+
+==========================
+
+Chain 888224
+
+Estimated gas price: 1 gwei
+
+Estimated total gas used for script: 880883
+
+Estimated amount required: 0.000880883 ETH
+
+==========================
+
+SIMULATION COMPLETE. To broadcast these transactions, add --broadcast and wallet configuration(s) to the previous command. See forge script --help for more.
+
+Transactions saved to: /Users/chuashuern/OtherTraining/PundiXplorer/Project-1/PundiXToken/broadcast/PundiXToken.s.sol/888224/dry-run/run-latest.json
+
+Sensitive values saved to: /Users/chuashuern/OtherTraining/PundiXplorer/Project-1/PundiXToken/cache/PundiXToken.s.sol/888224/dry-run/run-latest.json
+
+chuashuern@Chuas-MacBook-Pro PundiXToken % forge script script/PundiXToken.s.sol:PundiXTokenScript --rpc-url $RPC_URL --legacy --broadcast -vvvv    
+[⠒] Compiling...
+No files changed, compilation skipped
+Traces:
+  [588957] PundiXTokenScript::run()
+    ├─ [0] VM::envUint("DEV_PRIVATE_KEY") [staticcall]
+    │   └─ ← <env var value>
+    ├─ [0] VM::addr(29970643027849817696860229151339107311442698687681695696663910421051340826333 [2.997e76]) [staticcall]
+    │   └─ ← 0xE842987E5078a20bA7235865a90257F62fa63674
+    ├─ [0] console::log("Deployer:", 0xE842987E5078a20bA7235865a90257F62fa63674) [staticcall]
+    │   └─ ← ()
+    ├─ [0] VM::startBroadcast(29970643027849817696860229151339107311442698687681695696663910421051340826333 [2.997e76])
+    │   └─ ← ()
+    ├─ [454786] → new PundiXToken@0x11795E2bf7BBD20fE98eA458333AAc334F01a0dc
+    │   └─ ← 2046 bytes of code
+    ├─ [0] console::log("Token Contract Address:", PundiXToken: [0x11795E2bf7BBD20fE98eA458333AAc334F01a0dc]) [staticcall]
+    │   └─ ← ()
+    ├─ [46789] PundiXToken::mint(0x34846BF00C64A56A5FB10a9EE7717aBC7887FEdf, 10000000000000000000 [1e19])
+    │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x34846BF00C64A56A5FB10a9EE7717aBC7887FEdf, value: 10000000000000000000 [1e19])
+    │   └─ ← ()
+    ├─ [24889] PundiXToken::mint(0xE842987E5078a20bA7235865a90257F62fa63674, 10000000000000000000 [1e19])
+    │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xE842987E5078a20bA7235865a90257F62fa63674, value: 10000000000000000000 [1e19])
+    │   └─ ← ()
+    ├─ [0] VM::stopBroadcast()
+    │   └─ ← ()
+    └─ ← ()
+
+
+Script ran successfully.
+
+== Logs ==
+  Deployer: 0xE842987E5078a20bA7235865a90257F62fa63674
+  Token Contract Address: 0x11795E2bf7BBD20fE98eA458333AAc334F01a0dc
+
+## Setting up 1 EVM.
+==========================
+Simulated On-chain Traces:
+
+  [547170] → new PundiXToken@0x11795E2bf7BBD20fE98eA458333AAc334F01a0dc
+    └─ ← 2046 bytes of code
+
+  [72697] PundiXToken::mint(0x34846BF00C64A56A5FB10a9EE7717aBC7887FEdf, 10000000000000000000 [1e19])
+    ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0x34846BF00C64A56A5FB10a9EE7717aBC7887FEdf, value: 10000000000000000000 [1e19])
+    └─ ← ()
+
+  [57736] PundiXToken::mint(0xE842987E5078a20bA7235865a90257F62fa63674, 10000000000000000000 [1e19])
+    ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: 0xE842987E5078a20bA7235865a90257F62fa63674, value: 10000000000000000000 [1e19])
+    └─ ← ()
+
+
+==========================
+
+Chain 888224
+
+Estimated gas price: 1 gwei
+
+Estimated total gas used for script: 880883
+
+Estimated amount required: 0.000880883 ETH
+
+==========================
+
+###
+Finding wallets for all the necessary addresses...
+##
+Sending transactions [0 - 2].
+⠙ [00:00:00] [################################################################################################################################] 3/3 txes (0.0s)
+Transactions saved to: /Users/chuashuern/OtherTraining/PundiXplorer/Project-1/PundiXToken/broadcast/PundiXToken.s.sol/888224/run-latest.json
+
+Sensitive values saved to: /Users/chuashuern/OtherTraining/PundiXplorer/Project-1/PundiXToken/cache/PundiXToken.s.sol/888224/run-latest.json
+
+##
+Waiting for receipts.
+⠚ [00:00:06] [############################################################################################################################] 3/3 receipts (0.0s)
+##### 888224
+✅  [Success]Hash: 0x7067bef82afef84c218fef8e02f7f2afff1cd233dbda6b4ff01d53263a015dbb
+Contract Address: 0x11795E2bf7BBD20fE98eA458333AAc334F01a0dc
+Block: 393
+Paid: 0.00054717 ETH (547170 gas * 1 gwei)
+
+
+##### 888224
+✅  [Success]Hash: 0x0e5275c67d83bb6a65aa4986f1022abfa7840d96e3d3d7c736794ad92a8aea47
+Block: 393
+Paid: 0.000068421 ETH (68421 gas * 1 gwei)
+
+
+##### 888224
+✅  [Success]Hash: 0x3e406de91f5e0f79349fa4d8bdbae65ade984528cde231f8ff370e4d58f60b20
+Block: 393
+Paid: 0.000051321 ETH (51321 gas * 1 gwei)
+
+
+Transactions saved to: /Users/chuashuern/OtherTraining/PundiXplorer/Project-1/PundiXToken/broadcast/PundiXToken.s.sol/888224/run-latest.json
+
+Sensitive values saved to: /Users/chuashuern/OtherTraining/PundiXplorer/Project-1/PundiXToken/cache/PundiXToken.s.sol/888224/run-latest.json
+
+
+
+==========================
+
+ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
+Total Paid: 0.000666912 ETH (666912 gas * avg 1 gwei)
+
+Transactions saved to: /Users/chuashuern/OtherTraining/PundiXplorer/Project-1/PundiXToken/broadcast/PundiXToken.s.sol/888224/run-latest.json
+
+Sensitive values saved to: /Users/chuashuern/OtherTraining/PundiXplorer/Project-1/PundiXToken/cache/PundiXToken.s.sol/888224/run-latest.json
