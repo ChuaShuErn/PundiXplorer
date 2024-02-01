@@ -18,7 +18,7 @@ Image below shows the Transaction Receipt for the Deployment of the ERC-20 PDXT.
 
 Image below shows the test ether balance denoted as FETH and 10 PDXT tokens.
 
-![MetamaskTokenBalance](MetamaskScreenshot.png)
+![MetamaskScreenshot](MetaMaskScreenshot.png)
 
 ### Transfer Token Image
 
