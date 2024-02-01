@@ -36,10 +36,9 @@ async function getValidatorsCumulativeEarnings(): Promise<void> {
     const validators = data.validators;
 
     for (let i = 0; i < validators.length; i++) {
-      // console.log(data.validators[i].commission);
       const validatorAddress = validators[i].operator_address;
       const validatorMoniker = validators[i].description.moniker;
-      // console.log(data.validators[i].description);
+
       const commission = (await getAccumulatedCommissionByValidatorAddress(
         validatorAddress
       )) as CommissionResponse;
@@ -47,15 +46,7 @@ async function getValidatorsCumulativeEarnings(): Promise<void> {
       const outstandingReward = (await getOutstandingRewardsByValidatorAddress(
         validatorAddress
       )) as OutstandingRewardsResponse;
-      // console.log("for address", validatorAddress);
-      // console.log(
-      //   "comission:",
-      //   JSON.stringify(commission?.commission, null, 2)
-      // );
-      // console.log(
-      //   "outstanding reward:",
-      //   JSON.stringify(outstandingReward.rewards, null, 2)
-      // );
+
       const commissionValue =
         commission?.commission?.commission[0]?.amount || "0";
       const outstandingRewardValue =
