@@ -16,6 +16,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "csv-writer": "^1.6.0",
     "dotenv": "^16.4.1",
     "ethers": "^6.10.0"
   }
